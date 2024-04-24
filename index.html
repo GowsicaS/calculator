@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="whole-container">
+        <h1 class="main-heading">Simple Calculator</h1>
+        <div class="simple-calculator">
+            <input type="text" placeholder="0" id="text-box">
+            <button onclick="Clear()" class="grey">AC</button>
+            <button onclick="del()" class="grey">DEL</button>
+            <button onclick="display('%')" class="grey">%</button>
+            <button onclick="display('/')" class="orange">/</button>
+            <button onclick="display('7')" class="d-grey">7</button>
+            <button onclick="display('8')" class="d-grey">8</button>
+            <button onclick="display('9')" class="d-grey">9</button>
+            <button onclick="display('*')" class="orange">*</button>
+            <button onclick="display('4')" class="d-grey">4</button>
+            <button onclick="display('5')" class="d-grey">5</button>
+            <button onclick="display('6')" class="d-grey">6</button>
+            <button onclick="display('-')" class="orange">-</button>
+            <button onclick="display('1')" class="d-grey">1</button>
+            <button onclick="display('2')" class="d-grey">2</button>
+            <button onclick="display('3')" class="d-grey">3</button>
+            <button onclick="display('+')" class="orange">+</button>
+            <button onclick="display('0')" class="d-grey zero">0</button>
+            <button onclick="display('.')" class="d-grey">.</button>
+            <button onclick="Calculate()" class="orange">=</button>
+        </div>
+    </div>
+    <script>
+        var result = document.getElementById("text-box");
+        function display(num){
+            result.value += num;
+        }
+        function Calculate(){
+            try{
+                result.value = eval(result.value);
+            }
+            catch{
+                alert("Invalid");
+            }
+        }
+        function Clear(){
+            result.value = " ";
+        }
+        function del(){
+            result.value = result.value.slice(0,-1);
+        }
+    </script>
+</body>
+</html>

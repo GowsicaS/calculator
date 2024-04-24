@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@100;200;300;400;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@100;200;300;400;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: beige;
+    font-family: 'Roboto';
+}
+.whole-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-heading{
+    /* text-align: center;
+    padding: 20px;
+    background-color: transparent; */
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: 'EB Garamond';
+}
+.simple-calculator{
+    padding: 15px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4,60px);
+    border-radius: 8px;
+    width: 243px;
+    align-items: center;
+}
+input{
+    grid-column: span 4;
+    text-align: end;
+    height: 80px;
+    background: transparent;
+    color: #ffffff;
+    border-width: 0px;
+    font-size: 30px;
+}
+button{
+    border-radius: 50%;
+    margin: 5px;
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    border-width: 0px;
+    font-weight: 500;
+}
+.grey{
+    background-color: rgb(148, 146, 146);
+    color: #000000;
+}
+.orange{
+    background-color: rgb(255, 123, 0);
+    color: #ffffff;
+}
+.d-grey{
+    background-color: rgb(44, 44, 44);
+    color: #ffffff;
+}
+.zero{
+    grid-column: span 2;
+    width: 110px;
+    border-radius: 100px;
+}
